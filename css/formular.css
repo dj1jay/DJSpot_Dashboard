@@ -1,0 +1,34 @@
+/* CSS Document */
+form {
+  width: 30em;
+  /* padding-top: 3em; */
+  position: relative;
+}
+input, select {
+  margin: 0 0 1em 31%;
+  padding: .2em .5em;
+  width: 40%; 
+}
+label { 
+  text-align: right;
+  line-height: 1.5;
+  width: 30%;
+  position: absolute;
+  left: 0;
+}
+label::after {
+  content: ": ";
+}
+button {
+  margin-left: 31%;
+}
+input:required + label::before {
+  position: absolute;
+  left: 300%;
+  content: "★";
+  color: red;
+}
+input:required:valid + label::before {
+  content: "✔";
+  color: green;
+}

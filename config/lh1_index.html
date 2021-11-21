@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<head>
+<meta charset="UTF-8">
+<title>SvxReflector Last Heard </title>
+</head>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#lh1").load("lh1.php"); 
+    var refreshId = setInterval(function() {
+        $("#lh1").load('lh1.php?' + 1*new Date());
+    },1000);
+});
+</script>
+<center>
+<div id="lh1"></div>
+</center>
+</body>
