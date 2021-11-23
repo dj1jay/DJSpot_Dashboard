@@ -7,7 +7,7 @@ $Call 		= "DJ1JAY";
 $refCall	= "DJ1JAY";
 
 // Handelt es sich im einen VHF DJSpot ? yes / no
-$vhf 		= 'yes' ;
+$vhf 		= 'no' ;
 
 // Trage den Pfad zum Svxlink Log ein
 $log 		= "/var/log/svxlink";
@@ -70,5 +70,5 @@ $btn_name19	= "Pi Shutdown";
 
 
 // Bitte nicht Verändern
-$version = "<small><b>20211121_V 1.38</b></small>";
+$version = "<small><b>20211123_V 1.39</b></small>";
 ?>

@@ -37,9 +37,10 @@ body {
 <a class="navbar-brand" href="../index.php"><?php echo $Call;?></a></div>
 <div id="navbar" class="navbar-collapse">
 <ul class="nav navbar-nav">
-<li>  <a href="../index.php">Home</a></li>
-<li>  <a href="../io/io.php">Svx Controll</a></li>
-<li>  <a href="../dashboard.php">Dashboard</a></li>
+<li>  	<a href="../index.php">Home</a></li>
+<li>  	<a href="../io/io.php">Svx Controll</a></li>
+<li>	<a href="../dashboard.php">Dashboard</a></li>
+<li>	<a href="../volume.php">Lautstärke</a></li>
 <li>  <a href="../channel.php">Kanalwechsel</a></li>
 </ul></div>
 </div>
