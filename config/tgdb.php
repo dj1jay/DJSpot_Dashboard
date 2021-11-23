@@ -1,6 +1,6 @@
 <?php
 
-$tg_db_array = [
+$tgdb_array = [
     '27'                => '<small>TG27</small> Local only DO0HWI',
     '28'                => '<small>TG28</small> Local only DO0RDG',
     '8'                 => '<small>TG8</small> Local Quasselstrippe',
