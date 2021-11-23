@@ -103,7 +103,7 @@ window.setTimeout("location.reload()",3000);
 </form>
 </div></div>
 </div>
-<a href="https://thueringen.link"><?php echo 'Uptime',$data, ' ','Version'," >> ", $version;?></a>
+<a href="https://thueringen.link"><?php echo 'Uptime',$data, ' ','DJSpot-Dashbord Version'," >> ", $version;?></a>
 </head>
 </body>  
 </html>

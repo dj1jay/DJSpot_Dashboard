@@ -123,7 +123,7 @@ window.setTimeout("location.reload()",3000);
 </form>
 </div>
 </div>
-<a href="https://thueringen.link"><?php echo /*$data*/'Version'," >> ", $version;?></a>
+<a href="https://thueringen.link"><?php echo /*$data*/'DJSpot-Dashboard Version'," >> ", $version;?></a>
 </head>
 </body>  
 </html>

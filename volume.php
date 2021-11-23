@@ -6,8 +6,7 @@ include ('./config/config.php');
 include ('./config/button.php');
 include ('./config/channelbtn.php');
 include_once('./config/volbtn.php');
-//include ('./config/lh.php');
-$data = shell_exec('uptime');
+//$data = shell_exec('uptime');
 ?>
 
 <meta charset="UTF-8">
@@ -18,7 +17,7 @@ $data = shell_exec('uptime');
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 
-<title><?php echo $Call;?> DJpot Channel Controller</title>
+<title><?php echo $Call;?> DJpot Volume Controller</title>
 
 <!-- Bootstrap -->
 <link href="./css/bootstrap.css" rel="stylesheet">
@@ -44,12 +43,12 @@ window.setTimeout("location.reload()",3000);
 <div class="container">
 <div class="panel panel-default">
  <div class="panel-heading">
- <h1 class="panel-title"><?php echo $Call;?> - DjSpot Channel Controller</h2></div>
+ <h1 class="panel-title"><?php echo $Call;?> - DjSpot Volume Controller</h2></div>
      <div class="panel-body">
    <div class="row">
 
 
-<pre><iframe style="width:300px; height:180px;" src="https://thueringen.link/lh/lh1_index.html" frameborder="0"></iframe> <iframe style="width:300px; height:180px;" src="./config/lh1_index.html" frameborder="0"></iframe></pre>
+<iframe style="width:300px; height:180px;" src="https://thueringen.link/lh/lh1_index.html" frameborder="0"></iframe> <iframe style="width:300px; height:180px;" src="./config/lh1_index.html" frameborder="0"></iframe>
 <pre><?php echo $tg;?></pre>
   <?php echo $status;?>
 
@@ -63,60 +62,23 @@ window.setTimeout("location.reload()",3000);
 <input style="height: 75px; width: 25%" type="submit" name="vol3"
                 class="button" value="90%" />    
 <input style="height: 75px; width: 25%;"type="submit" name="vol4"
-                class="button" value="0%" />
+                class="button" value="Mute" />
 <input style="height: 75px; width: 25%;" type="submit" name="vol5"
-                class="button" value="-" />
+                class="button" value="50%" />
 <br>
 <!--
-<input style="height: 200px; width: 25%;"type="submit" name="button6"
+<input style="height: 200px; width: 25%;"type="submit" name="vol6"
                 class="button" value="432.875"  />
 <!--
-<input style="height: 200px; width: 25%;" type="submit" formmethod="post" name="button7"
+<input style="height: 200px; width: 25%;" type="submit" formmethod="post" name="vol7"
                 class="button" value="2" />
-<input style="height: 200px; width: 25%;"type="submit" name="button8"
+<input style="height: 200px; width: 25%;"type="submit" name="vol8"
                 class="button" value="3" /><br>
-
-<input style="height: 200px; width: 25%;"type="submit" name="button9"
-                class="button" value="4" />
-<input style="height: 200px; width: 25%;"type="submit" name="button10"
-                class="button" value="5" />
-<input style="height: 200px; width: 25%;"type="submit" name="button11"
-                class="button" value="6" /><br>
-
-<input style="height: 200px; width: 25%;"type="submit" name="button12"
-                class="button" value="7" />
-<input style="height: 200px; width: 25%;"type="submit" name="button13"
-                class="button" value="8" />
-<input style="height: 200px; width: 25%;"type="submit" name="button14"
-                class="button" value="9" /><br>
-
-<input style="height: 200px; width: 25%;"type="submit" name="button15"
-                class="button" value="*" />
-<input style="height: 200px; width: 25%;"type="submit" name="button16"
-                class="button" value="0" />
-<input style="height: 200px; width: 25%;"type="submit" name="button17"
-                class="button" value="#" /><br><br>
-
-<input style="height: 75px; width: 25%;"type="submit" name="button18"
-                class="button" value="Restart svxlink --  Not Working " />
-<input style="height: 75px; width: 25%;"type="submit" name="button19"
-                class="button" value="Shutdown Pi" />
-
-<br><p>
-<input style="height: 75px; width: 20%;"type="submit" name="button20"
-                class="button" value="<?php echo $btn_name20;?>" />
-<input style="height: 75px; width: 20%;"type="submit" name="button21"
-                class="button" value="<?php echo $btn_name21;?>" />
-
-<input style="height: 75px; width: 20%;"type="submit" name="button22"
-                class="button" value="<?php echo $btn_name22;?>" />
-<input style="height: 75px; width: 20%;"type="submit" name="button23"
-                class="button" value="<?php echo $btn_name23;?>" />
 -->
 </form>
 </div>
 </div>
-<a href="https://thueringen.link"><?php echo /*$data*/'Version'," >> ", $version;?></a>
+<a href="https://thueringen.link"><?php echo /*$data*/'DJSpot-Dashbord Version'," >> ", $version;?></a>
 </head>
 </body>  
 </html>
