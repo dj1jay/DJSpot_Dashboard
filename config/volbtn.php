@@ -4,13 +4,13 @@ include ('./config.php');
 
 if (isset($_POST['vol1']))
     {
-        shell_exec('amixer set Speaker 10+');
+        shell_exec('amixer set Speaker 5+');
         $status = ('<pre><h5><center><p style="color: red; ">Lauter</center></h5></p></pre>');
     }
 
 if (isset($_POST['vol2']))
     {
-        shell_exec('amixer set Speaker 10-');
+        shell_exec('amixer set Speaker 5-');
         $status = ('<pre><h5><center><p style="color: red; ">Leiser</center></h5></p></pre>');
     }
 
@@ -26,8 +26,8 @@ if (isset($_POST['vol4']))
     }
 if (isset($_POST['vol5']))
     {
-        shell_exec(' ');
-        $status = ('<pre><h5><center><p style="color: red; ">Keine Funktion zugewiesen</center></h5></p></pre>');
+        shell_exec('amixer set Speaker 85% ');
+        $status = ('<pre><h5><center><p style="color: red; ">Volume 50%</center></h5></p></pre>');
     }
 /*
 if (isset($_POST['vol6']))
