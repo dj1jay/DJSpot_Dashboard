@@ -3,9 +3,9 @@
 <head>
 <?php
 require_once('./config/config.php');
-require_once ('./config/channelbtn.php');
+include_once ('./config/channelbtn.php');
 //include_once ('./config/lh.php');
-$data = shell_exec('uptime');
+//$data = shell_exec('uptime');
 ?>
 
 <meta charset="UTF-8">
@@ -17,6 +17,7 @@ $data = shell_exec('uptime');
 <meta http-equiv="Expires" content="0" />
 
 <title><?php echo $Call;?> DJpot Channel Controller</title>
+<link rel="icon" type="image/x-icon" href="/config/smiley.png">
 
 <!-- Bootstrap -->
 <link href="./css/bootstrap.css" rel="stylesheet">
@@ -51,6 +52,7 @@ window.setTimeout("location.reload()",3000);
 <pre><?php echo $tg;?></pre>
   <?php echo $status;?>
 -->
+<center><font size=3>Kanäle werden mit DCS023 gesetzt</font></center></br>
     <form method="post">
 <?php 
 if ($vhf == no) {
@@ -87,17 +89,19 @@ echo '                class="button" value="145.225" /> ';
 echo '<input style="height: 75px; width: 25%" type="submit" name="channel9" ';
 echo '                class="button" value="145.2375" /> ';    
 echo '<br></p>';
-echo '<input style="height: 75px; width: 30%;"type="submit" name="channel10" ';
+echo '<input style="height: 75px; width: 25%;"type="submit" name="channel10" ';
 echo '                class="button" value="145.250" /> ';
-echo '<input style="height: 75px; width: 30%;" type="submit" name="channel11" ';
+echo '<input style="height: 75px; width: 25%;" type="submit" name="channel11" ';
 echo '                class="button" value="145.2625" /> ';
+
+echo '<input style="height: 75px; width: 25%;"type="submit" name="channel12" ';
+echo '                class="button" value="145.275"  /> ';
 echo '<br></p>';
 
-echo '<input style="height: 75px; width: 30%;"type="submit" name="channel12" ';
-echo '                class="button" value="145.275"  /> ';
-
 echo '<input style="height: 75px; width: 30%;"type="submit" name="channel13" ';
-echo '                class="button" value="145.2875"  />';
+echo '                class="button" value="145.2875"  /> ';
+echo '<input style="height: 75px; width: 30%;"type="submit" name="channel14" ';
+echo '                class="button" value="145.7875"  />';
 echo '<br>';
 }
 ?>
