@@ -18,6 +18,7 @@ include_once('./config/volbtn.php');
 <meta http-equiv="Expires" content="0" />
 
 <title><?php echo $Call;?> DJpot Volume Controller</title>
+<link rel="icon" type="image/x-icon" href="/config/smiley.png">
 
 <!-- Bootstrap -->
 <link href="./css/bootstrap.css" rel="stylesheet">
@@ -47,11 +48,13 @@ window.setTimeout("location.reload()",3000);
      <div class="panel-body">
    <div class="row">
 
-
-<iframe style="width:300px; height:180px;" src="https://thueringen.link/lh/lh1_index.html" frameborder="0"></iframe> <iframe style="width:300px; height:180px;" src="./config/lh1_index.html" frameborder="0"></iframe>
-<pre><?php echo $tg;?></pre>
+<center>
+<iframe style="width:400px; height:180px;" src="https://thueringen.link/lh/lh1_index.html" frameborder="0"></iframe> <iframe style="width:400px; height:180px;" src="./config/lh10_index.html" frameborder="0"></iframe>
+</center>
+<pre>
+<center><font size=4>Lautstärkeregler für extern Lautsprecher</font></center>
+</pre>
   <?php echo $status;?>
-
     <form method="post">
 <input style="height: 75px; width: 45%;"type="submit" name="vol1"
         	class="button" value="vol +" />    
