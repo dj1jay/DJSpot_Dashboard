@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<head>
+<meta charset="UTF-8">
+<title>SvxReflector Last Heard </title>
+</head>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#service").load("service.php");
+    var refreshId = setInterval(function() {
+        $("#service").load('service.php?' + 1*new Date());
+    },10000);
+});
+</script>
+<center>
+<div id="service"></div>
+</center>
+</body>
+
+
