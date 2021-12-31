@@ -10,10 +10,10 @@ $data = substr($data,12,9);
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title><?php echo $Call;?> DJpot Remote Controller</title>
-
+<link rel="icon" type="image/x-icon" href="/config/smiley.png">
 <!-- Bootstrap -->
 <link href="../css/bootstrap.css" rel="stylesheet">
 
@@ -45,17 +45,26 @@ window.setTimeout("location.reload()",3000);
  <?php echo $status;?>
     <form method="post">
 <input style="height: 75px; width: 45%;"type="submit" name="button1"
-        	class="button" value="Thr-L trennen" />          
+        	class="button" value="Verbund trennen" />          
 <input style="height: 75px; width: 45%;"type="submit" name="button2"
-                class="button" value="Thr-L zuschalten" /></br></p>
+                class="button" value="Verbund zuschalten" /></br></p>
+<!--<input style="height: 75px; width: 20%;"type="submit" name="button1"
+                class="button" value="Verbund trennen THR" />    
+<input style="height: 75px; width: 20%;"type="submit" name="button2"
+                class="button" value="Verbund zuschalten THR" />
 
-<input style="height: 75px; width: 30%" type="submit" name="button3"
+<input style="height: 75px; width: 20%;"type="submit" name="button01"
+                class="button" value="Verbund trennen BB" />    
+<input style="height: 75px; width: 20%;"type="submit" name="button02"
+                class="button" value="Verbund zuschalten BB" />-->
+<br><p></p>
+
+<input style="height: 75px; width: 25%" type="submit" name="button3"
                 class="button" value="<?php echo $btn_name3 ;?>" />    
-<input style="height: 75px; width: 30%;"type="submit" name="button4"
+<input style="height: 75px; width: 25%;"type="submit" name="button4"
                 class="button" value="<?php echo $btn_name4 ;?>" />
-<input style="height: 75px; width: 30%;" type="submit" name="button5"
-                class="button" value="<?php echo $btn_name5 ;?>" />
-<br></p></p>
+<input style="height: 75px; width: 25%;" type="submit" name="button5"
+                class="button" value="<?php echo $btn_name5 ;?>" /><br></p></p>
 
 <input style="height: 125px; width: 30%;"type="submit" name="button6"
                 class="button" value="1"  />
@@ -85,25 +94,27 @@ window.setTimeout("location.reload()",3000);
 <input style="height: 125px; width: 30%;"type="submit" name="button17"
                 class="button" value="#" /><br><br></p>
 
-<input style="height: 75px; width: 22%;"type="submit" name="button20"
+<input style="height: 75px; width: 25%;"type="submit" name="button18"
+                class="button" value="<?php echo $btn_name18;?>" />
+<input style="height: 75px; width: 25%;"type="submit" name="button18a"
+                class="button" value="<?php echo $btn_name18a;?>" />
+<input style="height: 75px; width: 25%;"type="submit" name="button19"
+                class="button" value="<?php echo $btn_name19;?>" /><br></p>
+
+<input style="height: 75px; width: 20%;"type="submit" name="button20"
                 class="button" value="<?php echo $btn_name20;?>" />
-<input style="height: 75px; width: 22%;"type="submit" name="button21"
+<input style="height: 75px; width: 20%;"type="submit" name="button21"
                 class="button" value="<?php echo $btn_name21;?>" />
 
-<input style="height: 75px; width: 22%;"type="submit" name="button22"
+<input style="height: 75px; width: 20%;"type="submit" name="button22"
                 class="button" value="<?php echo $btn_name22;?>" />
-<input style="height: 75px; width: 22%;"type="submit" name="button23"
-                class="button" value="<?php echo $btn_name23;?>" /><br></p>
-
-<input style="height: 75px; width: 45%;"type="submit" name="button18"
-                class="button" value="<?php echo $btn_name18;?>" />
-<input style="height: 75px; width: 45%;"type="submit" name="button19"
-                class="button" value="<?php echo $btn_name19;?>" />
+<input style="height: 75px; width: 20%;"type="submit" name="button23"
+                class="button" value="<?php echo $btn_name23;?>" />
 
 </form>
 </div></div>
 </div>
-<a href="https://thueringen.link"><?php echo 'Uptime',$data, ' ','DJSpot-Dashbord Version'," >> ", $version;?></a>
+<a href="https://thueringen.link"><?php echo 'Uptime',$data, ' ','Version'," >> ", $version;?></a>
 </head>
 </body>  
 </html>
