@@ -17,7 +17,7 @@ $data = shell_exec('uptime');
 <meta http-equiv="Expires" content="0" />
 
 <title><?php echo $Call;?> DJpot Remote Controller</title>
-
+<link rel="icon" type="image/x-icon" href="/config/smiley.png">
 <!-- Bootstrap -->
 <link href="./css/bootstrap.css" rel="stylesheet">
 
@@ -37,7 +37,6 @@ window.setTimeout("location.reload()",3000);
 <?php include ("./config/navbar.php");?>
 
 <body style="text-align:center">   
-<body bgcolor=lightgrey>
 
 <div class="container">
 <div class="panel panel-default">
@@ -46,8 +45,17 @@ window.setTimeout("location.reload()",3000);
      <div class="panel-body">
    <div class="row">
 
+<?php 
+if ($WLAN == yes) {
 
-<iframe style="width:300px; height:180px;" src="https://thueringen.link/lh/lh1_index.html" frameborder="0"></iframe> <iframe style="width:300px; height:180px;" src="./config/lh1_index.html" frameborder="0"></iframe>
+echo '<iframe style="width:100%; height:100px;" src="./config/service_index.html" frameborder="0"></iframe><br>';
+}
+
+echo '<iframe style="width:380px; height:180px;" src="https://thueringen.link/lh/lh1_index.html" frameborder="0"></iframe> <iframe style="width:380px; height:180px;" src="./config/lh10_index.html" frameborder="0"></iframe>';
+if ($lnk_info == yes) {
+echo '<iframe style="width:100%; height:100px;" src="./config/linking_index.html" frameborder="0"></iframe><br>';
+}
+?>
 
  <pre> <?php echo $status;?></pre>
 
