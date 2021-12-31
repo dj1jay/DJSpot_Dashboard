@@ -58,12 +58,12 @@ if (isset($_POST['channel13']))
         shell_exec('sh /var/www/html/config/channels/145.2875.sh');
     }
 
-/*  // Zur Erweiterung der Channelbuttons
- 
 if (isset($_POST['cannel14']))
     {
-        shell_exec('befehl ');
+        shell_exec('sh /var/www/html/config/channels/145.7875.sh');
     }
+
+/* // Zur Erweiterung der Channel Buttons
 if (isset($_POST['channel15']))
     {
         shell_exec('Befehl ');
