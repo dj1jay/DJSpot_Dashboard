@@ -6,8 +6,9 @@ include ('./config/config.php');
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=0.8">
-<title>Thueringen.link Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<title>DB0MGN SvxReflector</title>
+<link rel="icon" type="image/x-icon" href="/config/smiley.png">
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -31,7 +32,7 @@ include ('./config/config.php');
 <center>         <div class="panel-body">
    <div class="row">
 
-    <iframe style="width:100%; height:2150px;" src="https://master1.thueringen.link" frameborder="0"></iframe></center>
+    <iframe style="width:100%; height:3450px;" src="https://master1.thueringen.link" frameborder="0"></iframe></center>
          </div>
        </div>
            </div>
