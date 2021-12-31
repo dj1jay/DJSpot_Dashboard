@@ -1,0 +1,20 @@
+<!--<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Lastheard Thueringen.link</title>
+    <meta name="description" content="Lastheard Thueringen.link">
+
+</head>
+<body>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#lh10").load("lh10.php"); 
+    var refreshId = setInterval(function() {
+        $("#lh10").load('lh10.php?' + 1*new Date());
+    },1000);
+});
+</script>
+<div id="lh10"></div>
+<!--</body>-->
