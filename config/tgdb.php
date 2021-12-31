@@ -2,6 +2,7 @@
 /* talkgroup / number alias database */
 $tgdb_array = [
     '0'			=> 'IDLE',
+    '20'		=> '<small>TG20</small> DJSpot Test',
     '27'                => '<small>TG27</small> Local only DO0HWI',
     '28'                => '<small>TG28</small> Local only DO0RDG',
     '8'                 => '<small>TG8</small> Local Quasselstrippe',
@@ -33,14 +34,14 @@ $tgdb_array = [
     '985'		=> '<small>TG985</small> Lokal Suhl',
     '986'		=> '<small>TG986</small> Lokal Meiningen',
     '4711'		=> '<small>TG4711</small> echter Klön Talk',
-    '7777'		=> '<small>TG7777</small>Sysop Talk only',
-    '26298'		=> '<small>TG26298</small>Tetra Interlink',
+    '7777'		=> '<small>TG7777</small> Sysop Talk only',
+    '26298'		=> '<small>TG26298</small> Tetra Interlink',
     '26390'		=> '<small>TG26390</small> Region Neumarkt',
-    '26284'		=> '<small>TG26284</small>Region Franken',
+    '26284'		=> '<small>TG26284</small> Region Franken',
     '31868'             => '<small>TG31868</small> Weserbergland',
     '34497'             => '<small>TG34497 Korbach / Goldhausen </small>',
     '37574'             => '<small>TG37574 Local Bierstadt Einbeck </small>',
-    '56479'		=> '<small>TG56479</small>Region Westerwald',
+    '56479'		=> '<small>TG56479</small> Region Westerwald',
     '9999'              => '<small>TG9999</small> Papagai',
     'TG262_Holstein'    => 'Elbe Relais Verbund'
 ];
