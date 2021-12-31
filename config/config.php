@@ -9,6 +9,25 @@ $refCall	= "DJ1JAY";
 // Handelt es sich im einen VHF DJSpot ? yes / no
 $vhf 		= 'no' ;
 
+// WLAN Info im Dashboard anzeigen (yes / no )
+$WLAN           = 'yes';
+
+// Verbindung zum Verbund anzeigen (yes / no)
+$lnk_info       = 'yes';
+
+// Zur Anzeige im Dasboard, Was benutzt du? DJSpot / F8ASB (DjSpot / SvxHotspot) 
+$type           = 'Djspot';
+
+// Trage hier den Namen des Verbundes ein, der im Dashboard angezeigt werden soll
+$verbund_name1  = 'Thüringen.link';
+// Name des LINKS aus der Svxlink.conf
+$verbund_link1  = 'ReflectorLogic';
+
+// Weiterer Verbund ? (yes / no)
+$verbund2       = 'no';
+$verbund_name2  = 'Verbund Berlin';
+$verbund_link2  = 'ReflectorLogic1';
+
 // Trage den Pfad zum Svxlink Log ein
 $log 		= "/var/log/svxlink";
 
@@ -65,10 +84,11 @@ $btn27          = "*#";
 $btn_name27     = "Status";
 
  /// DO NOT TOUCH
-$btn_name18	= "Kill Svx";
+$btn_name18	= "(re)Start Svxlink";
+$btn_name18a	= "Stop Svxlink";
 $btn_name19	= "Pi Shutdown";
 
 
 // Bitte nicht Verändern
-$version = "<small><b>20211123_V 1.39</b></small>";
+$version = "<small><b>20220101_V 1.55</b></small>";
 ?>
