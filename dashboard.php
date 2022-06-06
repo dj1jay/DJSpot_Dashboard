@@ -28,7 +28,7 @@ include ('./config/config.php');
 <div class="container">
 <div class="panel panel-default">
  <div class="panel-heading">
- <h1 class="panel-title">Thueringen.link Dashboard</h2></div>
+ <h1 class="panel-title">FM-FunkNetz Dashboard</h2></div>
 <center>         <div class="panel-body">
    <div class="row">
 

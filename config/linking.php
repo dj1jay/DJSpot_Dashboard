@@ -39,7 +39,7 @@ $link2_badge    = ($lnk2 > 'Deactivating' ? ''.danger.'': ''.success.'');
 
 ?>
 
-<li class="<?php echo $link1_badge;?>"><span class="badge"><?php echo $link1;?></span>Thueringen.link </li><p>
+<li class="<?php echo $link1_badge;?>"><span class="badge"><?php echo $link1;?> </span> <?php echo $verbund_name1;?> </li><p>
 <!--<li class="<?php echo $link2_badge;?>"><span class="badge"><?php echo $link2;?></span>Verbund Berlin </li>-->
 </body>
 </html>

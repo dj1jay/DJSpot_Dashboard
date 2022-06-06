@@ -28,6 +28,21 @@ $data = substr($data,12,9);
 window.setTimeout("location.reload()",3000);
 // ]]></script>
 -->
+
+<script src="../js/jquery-3.5.0.js" type="text/javascript"></script>
+ <script>
+  $(document).ready(function() {
+    if (localStorage.getItem("scroll") != null) {
+      $(window).scrollTop(localStorage.getItem("scroll"));
+    }
+
+    $(window).on("scroll", function() {
+      localStorage.setItem("scroll", $(window).scrollTop());
+    });
+
+});
+    </script>
+
 </head>
 <body>
 
@@ -100,6 +115,14 @@ window.setTimeout("location.reload()",3000);
                 class="button" value="<?php echo $btn_name18a;?>" />
 <input style="height: 75px; width: 25%;"type="submit" name="button19"
                 class="button" value="<?php echo $btn_name19;?>" /><br></p>
+
+
+
+<input style="height: 75px; width: 25%;"type="submit" name="button19a"
+                class="button" value="<?php echo $btn_name19a;?>" />
+<input style="height: 75px; width: 25%;"type="submit" name="button19b"
+                class="button" value="<?php echo $btn_name19b;?>" /><br></p>
+
 
 <input style="height: 75px; width: 20%;"type="submit" name="button20"
                 class="button" value="<?php echo $btn_name20;?>" />

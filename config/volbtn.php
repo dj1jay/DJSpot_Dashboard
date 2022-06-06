@@ -1,6 +1,8 @@
 <?php
-include ('./config.php');
-
+include ('config.php');
+if (empty($status)) {
+$status =  "No Data";
+};
 
 if (isset($_POST['vol1']))
     {

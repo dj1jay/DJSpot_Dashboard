@@ -63,13 +63,13 @@ $last_tg = "";
 }else{
 $last_tg1 = "in TG $last_tg";
 }
-if($tx_stat  > ON){
-    $tx_stat = ($talk2 == start) ? "<font size='5'><b><i><p style='background-color:red'>$tx $last_call <small>$last_tg1</small></i><b/></font></p>" : "<font size='5'><b><i><p style='background-color:red'>$tx TX $tx</i></b></font>";
+if($tx_stat  > 'ON'){
+    $tx_stat = ($talk2 == 'start') ? "<font size='5'><b><i><p style='background-color:red'>$tx $last_call <small>$last_tg1</small></i><b/></font></p>" : "<font size='5'><b><i><p style='background-color:red'>$tx TX $tx</i></b></font>";
 }else{
     $tx_stat =  "<font size='5'><b><i><p style='background-color:palegreen'>$type bereit </i></b></font>";
 }
-if($talk1 == OPEN){
-    $heard_you = ($talk == start) ? "<font size='5'><b><p style='background-color:cyan'>I Heard You <i><small>$last_tg1</i></small></b></font></p>" : "<font size='5'><b><p style='background-color:cyan'>I Heard You</b></font>";
+if($talk1 == 'OPEN'){
+    $heard_you = ($talk == 'start') ? "<font size='5'><b><p style='background-color:cyan'>I Heard You <i><small>$last_tg1</i></small></b></font></p>" : "<font size='5'><b><p style='background-color:cyan'>I Heard You</b></font>";
 }
 
 //////////////////////////// Status Ansicht //////////////////////
@@ -82,7 +82,7 @@ if(empty($talk1)) {
 echo $talk1 = $tx_stat;
 }
 else{
-echo ($talk1 == CLOSED) ? " $tx_stat" : "$heard_you";
+echo ($talk1 == 'CLOSED') ? " $tx_stat" : "$heard_you";
 }
 echo '</td></tr>';
 echo '<tr><td align=center height=5>';
@@ -99,9 +99,9 @@ echo '</tr>';
 echo '<tr>';
 echo '<td><center>';
 if(empty($talk)) {
-echo ($talk == stop) ? " $last_logic" : "<small><b><font color=000ff>Noch nichts von dir gehört</b></small> ";
+echo ($talk == 'stop') ? " $last_logic" : "<small><b><font color=000ff>Noch nichts von dir gehört</b></small> ";
 }else{
-echo ($talk == stop) ? "<br><small>deine letzte TG:</small></br>  $last_logic <br>" : "<p style='background-color:lightgreen'>TG $last_logic<br>";
+echo ($talk == 'stop') ? "<br><small>deine letzte TG:</small></br>  $last_logic <br>" : "<p style='background-color:lightgreen'>TG $last_logic<br>";
 }
 echo '</center></td></tr>';
 echo '<tr><td><center>';

@@ -1,5 +1,9 @@
 <?php
-include ('./config.php');
+include ('config.php');
+
+if (empty($status)) {
+$status =  "No Data";
+};
 
 
 if (isset($_POST['button1']))
@@ -117,6 +121,18 @@ if (isset($_POST['button19']))
     {
         shell_exec('/sbin/shutdown -h now');
         $status = ('<pre><h5><center><p style="color: red; "Shutdown</center></h5></p></pre>');
+    }
+
+if (isset($_POST['button19a']))
+    {
+        shell_exec('mosquitto_pub -h localhost -t "/djspot/channel/" -m "/var/www/html/io/update_dashboard_button.sh"');
+        $status = ('<pre><h5><center><p style="color: red; "Update Dashboard</center></h5></p></pre>');
+    }
+
+if (isset($_POST['button19b']))
+    {
+        shell_exec('mosquitto_pub -t "/djspot/core/" -m "/var/www/html/config/svx_make_button.sh"');
+        $status = ('<pre><h5><center><p style="color: red; "Update SvxLink</center></h5></p></pre>');
     }
 
 if (isset($_POST['button20']))

@@ -42,6 +42,7 @@ body {
 <li>	<a href="../dashboard.php">Dashboard</a></li>
 <li>	<a href="../volume.php">Lautstärke</a></li>
 <li>  <a href="../channel.php">Kanalwechsel</a></li>
+<li>  <a href="../svxlog.php">SvxLog</a></li>
 </ul></div>
 </div>
 </div>

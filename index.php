@@ -32,6 +32,21 @@ $data = shell_exec('uptime');
 window.setTimeout("location.reload()",3000);
 // ]]></script>
 -->
+
+<script src="../js/jquery-3.5.0.js" type="text/javascript"></script>
+ <script>
+  $(document).ready(function() {
+    if (localStorage.getItem("scroll") != null) {
+      $(window).scrollTop(localStorage.getItem("scroll"));
+    }
+
+    $(window).on("scroll", function() {
+      localStorage.setItem("scroll", $(window).scrollTop());
+    });
+
+});
+    </script>
+
 </head>
 <body>
 <?php include ("./config/navbar.php");?>
@@ -46,13 +61,13 @@ window.setTimeout("location.reload()",3000);
    <div class="row">
 
 <?php 
-if ($WLAN == yes) {
+if ($WLAN == 'yes') {
 
 echo '<iframe style="width:100%; height:100px;" src="./config/service_index.html" frameborder="0"></iframe><br>';
 }
 
 echo '<iframe style="width:380px; height:180px;" src="https://thueringen.link/lh/lh1_index.html" frameborder="0"></iframe> <iframe style="width:380px; height:180px;" src="./config/lh10_index.html" frameborder="0"></iframe>';
-if ($lnk_info == yes) {
+if ($lnk_info == 'yes') {
 echo '<iframe style="width:100%; height:100px;" src="./config/linking_index.html" frameborder="0"></iframe><br>';
 }
 ?>
@@ -105,6 +120,10 @@ echo '<iframe style="width:100%; height:100px;" src="./config/linking_index.html
                 class="button" value="Restart svxlink --  Not Working " />
 <input style="height: 75px; width: 25%;"type="submit" name="button19"
                 class="button" value="Shutdown Pi" />
+<input style="height: 75px; width: 25%;"type="submit" name="button19a"
+                class="button" value="Update Dashboard" />
+<input style="height: 75px; width: 25%;"type="submit" name="button19b"
+                class="button" value="Update SvxLink" />
 -->
 <br><p>
 <input style="height: 75px; width: 20%;"type="submit" name="button20"
